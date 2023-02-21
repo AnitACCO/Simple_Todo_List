@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Index File</title>
+        <link rel="stylesheet" href="todolist.css">
+    </head>
+    <body>
+        <h1>MY TODO LIST</h1>
+        <div class="input-list">
+            <input type="text" id = "list_item" oninput="blankCheck()">
+            <button id="add" onclick="addToList()" disabled=true>Add</button>
+            <button id="update" onclick="updateItem()" disabled=true style="display: none;">Update</button>
+        </div>
+        <div >
+            <h3>List Items</h3>
+            <ul>
+                <div id="Display_List">
+                </div>
+                
+            </ul>
+        
+        </div>
+    </body>
+    <script src="todolist.js"></script>
+</html>
